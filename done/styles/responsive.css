@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  li {
+    margin-right: 10px;
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .container .top-row {
+    flex-direction: column;
+  }
+
+  .container .top-row label {
+    margin: 0 auto 20px auto;
+    width: 100%;
+  }
+}

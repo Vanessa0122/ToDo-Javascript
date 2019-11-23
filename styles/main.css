@@ -1,0 +1,111 @@
+body, html {
+	font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+}
+
+button {
+  justify-content: space-around;
+  min-width: 120px !important;
+}
+
+.card {
+  border: 1px solid lightgray;
+  box-shadow: 3px 3px 12px #ddd;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+input {
+  background: none !important;
+}
+
+h2 {
+  color: #2395f3;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  align-items: center;
+  border: 1px solid lightgray;
+  display: flex;
+  min-height: 60px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+  justify-content: space-around;
+  min-width: 120px !important;
+  background-color: rgb(var(--matter-helper-theme)) !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  width: 80%;
+}
+
+.container .top-row {
+  margin-bottom: 40px;
+}
+
+.container .top-row form {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.container .top-row label {
+  flex-grow: 2;
+  margin-right: 40px;
+  min-width: 200px;
+}
+
+.task-item {
+  display: flex;
+}
+
+.task-item:not(.done) .matter-secondary {
+  display: none;
+}
+
+.task-item.done {
+  border: 1px solid #6600ee;
+  color: #999;
+}
+
+.task-item.done span::before {
+  content: '\002714';
+  color: #1bb35d;
+  margin-right: 8px;
+}
+
+.task-item.done button:not(.matter-secondary) {
+  display: none;
+}
+
+.task-item.done .matter-secondary {
+  display: inherit;
+}
+
+.task-item span {
+  flex-grow: 2;
+}

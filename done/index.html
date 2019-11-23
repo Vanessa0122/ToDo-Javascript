@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple Task List</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/reset.css" rel="stylesheet">
+  <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card top-row">
+      <form id="taskForm">
+        <h2>Task List:</h2>
+        <label class="matter-textfield-filled" type="text" for="taskTextInput">
+          <input placeholder=" " id="taskTextInput" />
+          <span>Enter a task:</span>
+        </label>
+        <input type="submit" value="Add Task" class="matter-button-contained"></input>
+      </form>
+    </div>
+    <div class="card bottom-row">
+      <h2>To-Do:</h2>
+      <ul>
+        <!-- <li class="task-item done">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <button class="matter-button-contained">Mark as done</button>
+          <button class="matter-button-contained matter-secondary">Delete</button>
+        </li>
+        <li class="task-item">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <button class="matter-button-contained">Mark as done</button>
+          <button class="matter-button-contained matter-secondary">Delete</button>
+        </li>
+        <li class="task-item">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <button class="matter-button-contained">Mark as done</button>
+          <button class="matter-button-contained matter-secondary">Delete</button>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+  <script src="scripts/main.js" type="text/javascript"></script>
+  <script src="scripts/withDatabase.js" type="text/javascript"></script>
+</body>
+
+</html>
